@@ -1,0 +1,233 @@
+#top {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #2f363e;
+}
+
+.clock {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 2;
+  box-shadow: inset 5px 5px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+#time {
+  position: relative;
+  width: 94%;
+  height: 94%;  
+  margin: auto; 
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+#time .circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#time .circle svg {
+  position: relative;
+  transform: rotate(270deg);
+}
+
+#time .circle:nth-child(1) svg {
+  width: 250px;
+  height: 250px;
+}
+
+#time .circle:nth-child(2) svg {
+  width: 210px;
+  height: 210px;
+}
+
+#time .circle:nth-child(3) svg {
+  width: 170px;
+  height: 170px;
+}
+
+#time .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  transform: translate(5px, 5px);
+  opacity: 0.25;
+}
+
+.clock #dots1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  z-index: 10;
+}
+
+.clock #dots2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  z-index: 10;
+}
+
+.clock #dots3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  z-index: 10;
+}
+
+.clock #dots1::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background: #ff2972;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #ff2972, 0 0 40px #ff2972, 0 0 40px #ff2972,
+    0 0 40px #ff2972;
+}
+
+.clock #dots2::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background: #fee800;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fee800, 0 0 40px #fee800, 0 0 40px #fee800,
+    0 0 40px #fee800;
+}
+
+.clock #dots3::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background: #04fc43;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #04fc43, 0 0 40px #04fc43, 0 0 40px #04fc43,
+    0 0 40px #04fc43;
+}
+
+#ss {
+  stroke-width: 5;
+  stroke: #ff2972;
+  stroke-dasharray: 760;
+}
+
+#mm {
+  stroke-width: 5;
+  stroke: #fee800;
+  stroke-dasharray: 630;
+}
+
+#hh {
+  stroke-width: 5;
+  stroke: #04fc43;
+  stroke-dasharray: 510;
+}
+
+/* Niddles Css */
+
+.niddles {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.niddles i {
+  position: absolute; 
+  width: 2px;
+  height: 50%;
+  opacity: 0.75;
+  border-radius: 6px;
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+} 
+
+#mn{
+    width: 170px;  
+    height: 170px; 
+    z-index: 9;  
+}
+
+#hr{
+    width: 140px; 
+    height: 140px; 
+    z-index: 8; 
+}
+
+
+#sc i {
+  background: #ff2972;
+}
+
+#mn i {
+  background: #fee800; 
+  width: 3px; 
+}
+
+#hr i {
+  background: #04fc43; 
+  width: 4px; 
+}  
+
+/* Number css */
+
+#time .num{
+    position: absolute;  
+    text-align: center;  
+    color: #999;  
+    font-family: consolas ;   
+} 
+
+#bx1{
+    transform: rotate(30deg);
+}
+
+#bx2{
+    transform: rotate(30deg); 
+}
+
+#time .num *{
+    font-size: 0.75em; 
+    font-weight: 500; 
+    color: black; 
+    display: inline-block; 
+} 
+
+
+ 
+
+
